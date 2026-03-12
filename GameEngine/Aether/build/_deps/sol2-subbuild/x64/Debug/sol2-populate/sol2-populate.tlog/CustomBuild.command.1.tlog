@@ -1,0 +1,150 @@
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\AC29DD55645FAA4ADDFAE689A24C9731\SOL2-POPULATE-MKDIR.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcfgdir=/Debug -P C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/tmp/sol2-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/src/sol2-populate-stamp/Debug/sol2-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\AC29DD55645FAA4ADDFAE689A24C9731\SOL2-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/tmp/sol2-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/src/sol2-populate-stamp/Debug/sol2-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\AC29DD55645FAA4ADDFAE689A24C9731\SOL2-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\sol2-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/tmp/sol2-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\AC29DD55645FAA4ADDFAE689A24C9731\SOL2-POPULATE-PATCH.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/src/sol2-populate-stamp/Debug/sol2-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\AC29DD55645FAA4ADDFAE689A24C9731\SOL2-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\sol2-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/src/sol2-populate-stamp/Debug/sol2-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\AC29DD55645FAA4ADDFAE689A24C9731\SOL2-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\sol2-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/src/sol2-populate-stamp/Debug/sol2-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\AC29DD55645FAA4ADDFAE689A24C9731\SOL2-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\sol2-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/src/sol2-populate-stamp/Debug/sol2-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\AC29DD55645FAA4ADDFAE689A24C9731\SOL2-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\sol2-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/src/sol2-populate-stamp/Debug/sol2-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\4E4F64762EFF97477FC074CF8FAE0545\SOL2-POPULATE-COMPLETE.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E make_directory C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/Debug/sol2-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/sol2-populate-prefix/src/sol2-populate-stamp/Debug/sol2-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKEFILES\4C2D3C8519FD71CD40C8749CFE22CC68\SOL2-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\SOL2-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -SC:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild -BC:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild --check-stamp-file C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

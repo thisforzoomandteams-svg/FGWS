@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\b26366c2ae8b0285cc91dddb1eec5a63\glm-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\b26366c2ae8b0285cc91dddb1eec5a63\glm-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\b26366c2ae8b0285cc91dddb1eec5a63\glm-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\b26366c2ae8b0285cc91dddb1eec5a63\glm-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\b26366c2ae8b0285cc91dddb1eec5a63\glm-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\b26366c2ae8b0285cc91dddb1eec5a63\glm-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\b26366c2ae8b0285cc91dddb1eec5a63\glm-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\b26366c2ae8b0285cc91dddb1eec5a63\glm-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\f176bbe1f0b6217825e3e155f34d7dcc\glm-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\5dc7cdab9a8eef06da24a163f52a4a91\glm-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\glm-subbuild\CMakeFiles\glm-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0D0E6F5C-7B44-365F-857A-8A08776E09D3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

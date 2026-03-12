@@ -1,0 +1,150 @@
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FA45FE081AA67FF2AD19ED8343BEED3D\GLM-POPULATE-MKDIR.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcfgdir=/Debug -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FA45FE081AA67FF2AD19ED8343BEED3D\GLM-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FA45FE081AA67FF2AD19ED8343BEED3D\GLM-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FA45FE081AA67FF2AD19ED8343BEED3D\GLM-POPULATE-PATCH.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FA45FE081AA67FF2AD19ED8343BEED3D\GLM-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FA45FE081AA67FF2AD19ED8343BEED3D\GLM-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FA45FE081AA67FF2AD19ED8343BEED3D\GLM-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FA45FE081AA67FF2AD19ED8343BEED3D\GLM-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\13CF4DA43CD1D4596686FD3D9FE0D227\GLM-POPULATE-COMPLETE.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E make_directory C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/Debug/glm-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\82A584E09D92DBC179654D60307B6DC8\GLM-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\GLM-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -SC:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild -BC:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild --check-stamp-file C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\f903a88b6ed20db364b69ff6f8c52ce4\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D5AF6BD2-81EA-35E4-97F6-EAE94687824B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

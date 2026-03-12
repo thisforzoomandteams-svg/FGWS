@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\gladsources\glad_gl_core_33\src\gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\gladsources\glad_gl_core_33\include\KHR\khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\gladsources\glad_gl_core_33\include\glad\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\CMakeFiles\d21c320d93abf3f729f6329fb02cdf8c\khrplatform.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{048D59ED-F0A9-392E-8A49-DD233E9B492A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BA67E93D-69B4-33F1-85B5-B1BB914519A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3EAD33DB-1FFE-3762-83EC-F989BE891AF4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

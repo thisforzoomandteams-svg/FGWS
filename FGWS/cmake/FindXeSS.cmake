@@ -1,0 +1,16 @@
+if(NOT XESS_FOUND)
+    if(DEFINED ENV{XESS_SDK_ROOT})
+        set(XESS_SDK_ROOT_HINT $ENV{XESS_SDK_ROOT})
+    endif()
+
+    find_path(XESS_INCLUDE_DIR xess.h HINTS ${XESS_SDK_ROOT_HINT})
+    find_library(XESS_LIB xess HINTS ${XESS_SDK_ROOT_HINT})
+
+    if(XESS_INCLUDE_DIR AND XESS_LIB)
+        set(XESS_FOUND TRUE)
+        set(XESS_INCLUDE_DIRS ${XESS_INCLUDE_DIR})
+        set(XESS_LIBRARIES ${XESS_LIB})
+    else()
+        set(XESS_FOUND FALSE)
+    endif()
+endif()

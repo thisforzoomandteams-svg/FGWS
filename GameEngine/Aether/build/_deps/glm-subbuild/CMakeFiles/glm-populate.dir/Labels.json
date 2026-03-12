@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/glm-populate"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/5dc7cdab9a8eef06da24a163f52a4a91/glm-populate.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/f176bbe1f0b6217825e3e155f34d7dcc/glm-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/b26366c2ae8b0285cc91dddb1eec5a63/glm-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/b26366c2ae8b0285cc91dddb1eec5a63/glm-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/b26366c2ae8b0285cc91dddb1eec5a63/glm-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/b26366c2ae8b0285cc91dddb1eec5a63/glm-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/b26366c2ae8b0285cc91dddb1eec5a63/glm-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/b26366c2ae8b0285cc91dddb1eec5a63/glm-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/b26366c2ae8b0285cc91dddb1eec5a63/glm-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-subbuild/CMakeFiles/b26366c2ae8b0285cc91dddb1eec5a63/glm-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glm-populate"
+		],
+		"name" : "glm-populate"
+	}
+}

@@ -1,0 +1,75 @@
+{
+  "aether_scene_version": 1,
+  "entities": [
+    {
+      "components": {
+        "material": {
+          "albedo": [0.2, 0.2, 0.2],
+          "shininess": 8.0,
+          "specular_color": [1.0, 1.0, 1.0],
+          "specular_strength": 0.05
+        }
+      },
+      "id": 1,
+      "name": "Ground",
+      "transform": {
+        "position": [0.0, -1.25, 0.0],
+        "rotation_deg": [0.0, 0.0, 0.0],
+        "scale": [8.0, 0.5, 8.0]
+      }
+    },
+    {
+      "components": {
+        "material": {
+          "albedo": [0.0, 0.8, 0.0],
+          "shininess": 64.0,
+          "specular_color": [1.0, 1.0, 1.0],
+          "specular_strength": 0.35
+        },
+        "script": {
+          "path": "Assets/Scripts/snake.lua"
+        }
+      },
+      "id": 2,
+      "name": "Snake Head",
+      "transform": {
+        "position": [0.0, 0.25, 0.0],
+        "rotation_deg": [0.0, 0.0, 0.0],
+        "scale": [0.5, 0.5, 0.5]
+      }
+    },
+    {
+      "components": {
+        "material": {
+          "albedo": [1.0, 0.8, 0.6],
+          "shininess": 1.0,
+          "specular_color": [1.0, 1.0, 1.0],
+          "specular_strength": 0.0
+        },
+        "point_light": {
+          "color": [1.0, 0.85, 0.6],
+          "intensity": 10.0,
+          "radius": 8.0
+        }
+      },
+      "id": 3,
+      "name": "Lamp (PointLight)",
+      "transform": {
+        "position": [0.0, 2.0, 1.5],
+        "rotation_deg": [0.0, 0.0, 0.0],
+        "scale": [0.2, 0.2, 0.2]
+      }
+    }
+  ],
+  "environment": {
+    "ambient": {
+      "color": [0.0, 0.0588, 0.07],
+      "intensity": 1.0
+    },
+    "directional_light": {
+      "color": [1.0, 0.98, 0.95],
+      "direction": [-0.35, -1.0, -0.2],
+      "intensity": 1.4
+    }
+  }
+}

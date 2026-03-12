@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\CMakeFiles\9a87e10a546298a0003d976632f35e61\Continuous.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build\CMakeFiles\Continuous" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{402FB53D-D5DF-3CF0-A9B3-FC7872B2E3F9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,150 @@
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\410A2A9B41C8C9CA825622D5E2A203C8\LUA_SRC-POPULATE-MKDIR.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcfgdir=/Debug -P C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/tmp/lua_src-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/Debug/lua_src-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\410A2A9B41C8C9CA825622D5E2A203C8\LUA_SRC-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/tmp/lua_src-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/Debug/lua_src-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\410A2A9B41C8C9CA825622D5E2A203C8\LUA_SRC-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/tmp/lua_src-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\410A2A9B41C8C9CA825622D5E2A203C8\LUA_SRC-POPULATE-PATCH.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/Debug/lua_src-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\410A2A9B41C8C9CA825622D5E2A203C8\LUA_SRC-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/Debug/lua_src-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\410A2A9B41C8C9CA825622D5E2A203C8\LUA_SRC-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/Debug/lua_src-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\410A2A9B41C8C9CA825622D5E2A203C8\LUA_SRC-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/Debug/lua_src-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\410A2A9B41C8C9CA825622D5E2A203C8\LUA_SRC-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/Debug/lua_src-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\EEC96AEE425D7120906BD7A1B9392936\LUA_SRC-POPULATE-COMPLETE.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E make_directory C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/CMakeFiles/Debug/lua_src-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/Debug/lua_src-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKEFILES\2D69111F0BFF491FABC37615CBCAD7A6\LUA_SRC-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\LUA_SRC-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -SC:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild -BC:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild --check-stamp-file C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/lua_src-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

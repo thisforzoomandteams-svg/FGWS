@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\fa45fe081aa67ff2ad19ed8343beed3d\glm-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\fa45fe081aa67ff2ad19ed8343beed3d\glm-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\fa45fe081aa67ff2ad19ed8343beed3d\glm-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\fa45fe081aa67ff2ad19ed8343beed3d\glm-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\fa45fe081aa67ff2ad19ed8343beed3d\glm-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\fa45fe081aa67ff2ad19ed8343beed3d\glm-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\fa45fe081aa67ff2ad19ed8343beed3d\glm-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\fa45fe081aa67ff2ad19ed8343beed3d\glm-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\13cf4da43cd1d4596686fd3d9fe0d227\glm-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\82a584e09d92dbc179654d60307b6dc8\glm-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\glm-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8AA8C0D6-AAAE-3295-AC6A-0A01FE1316A6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\GAMEENGINE\AETHER\BUILD\_DEPS\GLAD-SUBBUILD\CMAKEFILES\E7AB75CDE235028E015C4FECE255B846\GENERATE.STAMP.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -SC:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glad-subbuild -BC:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glad-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glad-subbuild/glad-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

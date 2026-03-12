@@ -1,0 +1,14 @@
+# Target labels
+ glm-populate
+# Source files and their labels
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/glm-populate
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/82a584e09d92dbc179654d60307b6dc8/glm-populate.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/13cf4da43cd1d4596686fd3d9fe0d227/glm-populate-complete.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/fa45fe081aa67ff2ad19ed8343beed3d/glm-populate-build.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/fa45fe081aa67ff2ad19ed8343beed3d/glm-populate-configure.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/fa45fe081aa67ff2ad19ed8343beed3d/glm-populate-download.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/fa45fe081aa67ff2ad19ed8343beed3d/glm-populate-install.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/fa45fe081aa67ff2ad19ed8343beed3d/glm-populate-mkdir.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/fa45fe081aa67ff2ad19ed8343beed3d/glm-populate-patch.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/fa45fe081aa67ff2ad19ed8343beed3d/glm-populate-test.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-subbuild/CMakeFiles/fa45fe081aa67ff2ad19ed8343beed3d/glm-populate-update.rule

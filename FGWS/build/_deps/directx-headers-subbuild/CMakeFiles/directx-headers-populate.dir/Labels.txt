@@ -1,0 +1,14 @@
+# Target labels
+ directx-headers-populate
+# Source files and their labels
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/directx-headers-populate
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/7c689ea16cd0c6b395b9ce4193c03839/directx-headers-populate.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/f72eaa7cd997aae7726bc1ab884032e7/directx-headers-populate-complete.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/8e11a201e1ef30fa92cdfbed9e3a3d5a/directx-headers-populate-build.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/8e11a201e1ef30fa92cdfbed9e3a3d5a/directx-headers-populate-configure.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/8e11a201e1ef30fa92cdfbed9e3a3d5a/directx-headers-populate-download.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/8e11a201e1ef30fa92cdfbed9e3a3d5a/directx-headers-populate-install.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/8e11a201e1ef30fa92cdfbed9e3a3d5a/directx-headers-populate-mkdir.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/8e11a201e1ef30fa92cdfbed9e3a3d5a/directx-headers-populate-patch.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/8e11a201e1ef30fa92cdfbed9e3a3d5a/directx-headers-populate-test.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/8e11a201e1ef30fa92cdfbed9e3a3d5a/directx-headers-populate-update.rule

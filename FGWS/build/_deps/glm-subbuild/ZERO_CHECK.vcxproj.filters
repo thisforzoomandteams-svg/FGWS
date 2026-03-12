@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\glm-subbuild\CMakeFiles\82a584e09d92dbc179654d60307b6dc8\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8AA8C0D6-AAAE-3295-AC6A-0A01FE1316A6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

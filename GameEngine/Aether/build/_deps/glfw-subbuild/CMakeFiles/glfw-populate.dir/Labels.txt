@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/9b906dd6100c12064eeaa3199c5ccee9/glfw-populate.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/919158f5da8a27f4fd1fe899eb9e24f0/glfw-populate-complete.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/f36022b8744f0be0428c3c38cf696ca0/glfw-populate-build.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/f36022b8744f0be0428c3c38cf696ca0/glfw-populate-configure.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/f36022b8744f0be0428c3c38cf696ca0/glfw-populate-download.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/f36022b8744f0be0428c3c38cf696ca0/glfw-populate-install.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/f36022b8744f0be0428c3c38cf696ca0/glfw-populate-mkdir.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/f36022b8744f0be0428c3c38cf696ca0/glfw-populate-patch.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/f36022b8744f0be0428c3c38cf696ca0/glfw-populate-test.rule
+C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-subbuild/CMakeFiles/f36022b8744f0be0428c3c38cf696ca0/glfw-populate-update.rule

@@ -1,0 +1,16 @@
+if(NOT NGX_FOUND)
+    if(DEFINED ENV{NGX_SDK_ROOT})
+        set(NGX_SDK_ROOT_HINT $ENV{NGX_SDK_ROOT})
+    endif()
+
+    find_path(NGX_INCLUDE_DIR ngx_dlss.h HINTS ${NGX_SDK_ROOT_HINT})
+    find_library(NGX_LIB NAMES ngxdlss HINTS ${NGX_SDK_ROOT_HINT})
+
+    if(NGX_INCLUDE_DIR AND NGX_LIB)
+        set(NGX_FOUND TRUE)
+        set(NGX_INCLUDE_DIRS ${NGX_INCLUDE_DIR})
+        set(NGX_LIBRARIES ${NGX_LIB})
+    else()
+        set(NGX_FOUND FALSE)
+    endif()
+endif()

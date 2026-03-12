@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-build/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glfw-build/src/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-build/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/glm-build/glm/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/nlohmann_json-build/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-build/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/glad_cmake/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/Engine/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/Sandbox/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

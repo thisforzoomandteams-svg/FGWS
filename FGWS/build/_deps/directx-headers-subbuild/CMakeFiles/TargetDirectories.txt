@@ -1,0 +1,3 @@
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/directx-headers-populate.dir
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/ZERO_CHECK.dir

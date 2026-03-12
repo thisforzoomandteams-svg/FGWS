@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/sol2-populate"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/4c2d3c8519fd71cd40c8749cfe22cc68/sol2-populate.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/4e4f64762eff97477fc074cf8fae0545/sol2-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/ac29dd55645faa4addfae689a24c9731/sol2-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/ac29dd55645faa4addfae689a24c9731/sol2-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/ac29dd55645faa4addfae689a24c9731/sol2-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/ac29dd55645faa4addfae689a24c9731/sol2-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/ac29dd55645faa4addfae689a24c9731/sol2-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/ac29dd55645faa4addfae689a24c9731/sol2-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/ac29dd55645faa4addfae689a24c9731/sol2-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/sol2-subbuild/CMakeFiles/ac29dd55645faa4addfae689a24c9731/sol2-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sol2-populate"
+		],
+		"name" : "sol2-populate"
+	}
+}

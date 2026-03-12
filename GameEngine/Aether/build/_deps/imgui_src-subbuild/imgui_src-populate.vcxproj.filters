@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\2ba3c0c39bd2fb02f1979740c4e9ce05\imgui_src-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\2ba3c0c39bd2fb02f1979740c4e9ce05\imgui_src-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\2ba3c0c39bd2fb02f1979740c4e9ce05\imgui_src-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\2ba3c0c39bd2fb02f1979740c4e9ce05\imgui_src-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\2ba3c0c39bd2fb02f1979740c4e9ce05\imgui_src-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\2ba3c0c39bd2fb02f1979740c4e9ce05\imgui_src-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\2ba3c0c39bd2fb02f1979740c4e9ce05\imgui_src-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\2ba3c0c39bd2fb02f1979740c4e9ce05\imgui_src-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\20c3ed5a612e36c2a29f0ed4f9372db4\imgui_src-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\a1c2d080e63f67a78a9889fd2eb7a22f\imgui_src-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\imgui_src-subbuild\CMakeFiles\imgui_src-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C6B7B60C-B1E6-35C9-BDBD-68EC915301B0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

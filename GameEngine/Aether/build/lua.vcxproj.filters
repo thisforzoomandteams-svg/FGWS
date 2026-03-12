@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lauxlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lbaselib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lcode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lcorolib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lctype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\ldblib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\ldebug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\ldo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\ldump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lfunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lgc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\linit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\liolib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\llex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lmathlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\loadlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lobject.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lopcodes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\loslib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lparser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lstate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lstring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lstrlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\ltable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\ltablib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\ltm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lundump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lutf8lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lvm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-src\lzio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3EAD33DB-1FFE-3762-83EC-F989BE891AF4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

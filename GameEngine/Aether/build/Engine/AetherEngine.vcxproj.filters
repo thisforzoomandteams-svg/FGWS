@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Aether.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Core\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Core\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Editor\ImGuiLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Editor\ImGuiLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Editor\ViewportPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\ECS\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\ECS\Prefab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\ECS\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\ECS\Components\ScriptComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Scripting\ScriptEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Scripting\ScriptRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Serialization\SceneSerializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Rendering\Framebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Rendering\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Rendering\IndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Rendering\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Rendering\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Rendering\ShadowMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Rendering\VertexArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\Rendering\VertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\src\ThirdParty\ImGuizmo\ImGuizmo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\Engine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\nlohmann_json-src\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3EAD33DB-1FFE-3762-83EC-F989BE891AF4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

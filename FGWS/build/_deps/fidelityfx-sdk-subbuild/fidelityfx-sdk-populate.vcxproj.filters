@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\96317d8ca121d88d637027914d50d2ab\fidelityfx-sdk-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\96317d8ca121d88d637027914d50d2ab\fidelityfx-sdk-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\96317d8ca121d88d637027914d50d2ab\fidelityfx-sdk-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\96317d8ca121d88d637027914d50d2ab\fidelityfx-sdk-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\96317d8ca121d88d637027914d50d2ab\fidelityfx-sdk-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\96317d8ca121d88d637027914d50d2ab\fidelityfx-sdk-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\96317d8ca121d88d637027914d50d2ab\fidelityfx-sdk-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\96317d8ca121d88d637027914d50d2ab\fidelityfx-sdk-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\314cdd76d93faf58dfdde51618adc805\fidelityfx-sdk-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\f903a88b6ed20db364b69ff6f8c52ce4\fidelityfx-sdk-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-subbuild\CMakeFiles\fidelityfx-sdk-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D5AF6BD2-81EA-35E4-97F6-EAE94687824B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

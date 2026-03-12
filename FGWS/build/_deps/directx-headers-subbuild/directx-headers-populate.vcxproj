@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BDBA18EB-7A60-36DB-A4EE-6FB53223A7FD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>directx-headers-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-mkdir.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcfgdir=/Debug -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/tmp/directx-headers-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/tmp/directx-headers-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\directx-headers-populate-gitinfo.txt;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/tmp/directx-headers-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\tmp\directx-headers-populate-gitupdate.cmake;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\directx-headers-populate-update-info.txt;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\directx-headers-populate-patch-info.txt;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-configure.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\tmp\directx-headers-populate-cfgcmd.txt;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-build.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-install.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-test.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\f72eaa7cd997aae7726bc1ab884032e7\directx-headers-populate-complete.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'directx-headers-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E make_directory C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/Debug/directx-headers-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-install;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-mkdir;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-download;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-update;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-patch;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-configure;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-build;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\src\directx-headers-populate-stamp\Debug\directx-headers-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\Debug\directx-headers-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\7c689ea16cd0c6b395b9ce4193c03839\directx-headers-populate.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\Debug\directx-headers-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\directx-headers-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -SC:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild -BC:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild --check-stamp-file C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject.cmake;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject\PatchInfo.txt.in;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject\UpdateInfo.txt.in;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject\cfgcmd.txt.in;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject\gitclone.cmake.in;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject\gitupdate.cmake.in;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject\mkdirs.cmake.in;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\4.1.2\CMakeSystem.cmake;C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\directx-headers-populate-prefix\tmp\directx-headers-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\directx-headers-populate">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{D0768BFE-3B9E-3B9D-AEB4-65C3892A0672}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

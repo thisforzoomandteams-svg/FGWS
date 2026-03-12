@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON PULSE 3D: OVERDRIVE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+        body { margin: 0; overflow: hidden; background: #02010a; font-family: 'Orbitron', sans-serif; user-select: none; }
+        canvas { display: block; }
+        .ui-panel { position: absolute; pointer-events: none; color: #fff; z-index: 10; width: 100%; height: 100%; padding: 2rem; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; }
+        .bar-container { background: rgba(0,0,0,0.5); border: 1px solid rgba(0,255,255,0.3); padding: 10px; border-radius: 8px; backdrop-filter: blur(5px); }
+        .bar { height: 12px; background: rgba(255,0,100,0.2); border: 1px solid #f06; border-radius: 4px; overflow: hidden; width: 250px; }
+        .bar-fill { height: 100%; background: linear-gradient(90deg, #f06, #ff00ff); box-shadow: 0 0 15px #f06; transition: width 0.1s linear; }
+        .speed-bar { height: 8px; background: rgba(0,255,255,0.2); border: 1px solid #0ff; border-radius: 4px; overflow: hidden; width: 200px; margin-top: 5px; }
+        .speed-fill { height: 100%; background: linear-gradient(90deg, #0ff, #fff); box-shadow: 0 0 15px #0ff; transition: width 0.1s linear; }
+        .menu { position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(5,2,20,0.95) 0%, rgba(0,0,0,0.98) 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 100; color: #fff; backdrop-filter: blur(15px); }
+        .neon-text { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px rgba(0,255,255,0.5); }
+        .hidden { display: none !important; }
+        .glitch-btn { position: relative; overflow: hidden; border: 2px solid #0ff; padding: 1rem 4rem; background: rgba(0,255,255,0.05); color: #0ff; font-weight: 900; letter-spacing: 0.3em; transition: 0.3s; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); text-transform: uppercase; }
+        .glitch-btn:hover { background: #0ff; color: #000; box-shadow: 0 0 40px #0ff; transform: scale(1.05); cursor: pointer; }
+        .ship-card { border: 1px solid rgba(0,255,255,0.1); transition: all 0.3s ease; cursor: pointer; background: rgba(255,255,255,0.02); transform: skewX(-5deg); position: relative; overflow: hidden; }
+        .ship-card::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent); transform: skewX(-20deg); transition: 0.5s; }
+        .ship-card:hover::before { left: 200%; }
+        .ship-card:hover { border-color: rgba(0,255,255,0.5); background: rgba(0,255,255,0.05); transform: skewX(-5deg) translateY(-5px); }
+        .ship-card.selected { border-color: #0ff; background: rgba(0,255,255,0.1); box-shadow: 0 0 30px rgba(0,255,255,0.2) inset, 0 0 20px rgba(0,255,255,0.4); transform: skewX(-5deg) scale(1.05); }
+        .stat-bar { height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; position: relative; margin-bottom: 4px;}
+        .stat-fill { height: 100%; border-radius: 2px; }
+        #alert-ui { position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 20px #fff; pointer-events: none; opacity: 0; transition: opacity 0.2s, transform 0.2s; z-index: 20; text-align: center; }
+        
+        /* HUD Grid lines */
+        .hud-grid { position: absolute; inset: 0; background: linear-gradient(transparent 95%, rgba(0, 255, 255, 0.05) 100%); background-size: 100% 4px; pointer-events: none; z-index: 5; }
+    </style>
+</head>
+<body>
+
+<div class="hud-grid"></div>
+<div id="alert-ui">NEAR MISS!</div>
+
+<div id="start-menu" class="menu">
+    <div class="mb-10 text-center">
+        <h1 class="text-7xl font-black italic tracking-tighter mb-2 neon-text">NEON PULSE: OVERDRIVE</h1>
+        <div class="h-1 w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
+        <p class="text-cyan-400 mt-4 text-xs tracking-[0.8em] animate-pulse">PROCEDURAL SHIFT ENABLED</p>
+    </div>
+    
+    <div class="flex gap-4 mb-12 flex-wrap justify-center max-w-5xl">
+        <div id="ship-container" class="flex gap-4"></div>
+    </div>
+
+    <button onclick="startGame()" class="glitch-btn">INITIATE SYNC [SPACE]</button>
+</div>
+
+<div id="death-menu" class="menu hidden">
+    <h1 class="text-7xl font-black italic text-pink-600 mb-4" style="text-shadow: 0 0 30px #f06;">SYSTEM FAILURE</h1>
+    <p id="final-score" class="text-4xl mb-2 text-cyan-300 font-bold">SCORE: 0</p>
+    <p id="final-zone" class="text-xl mb-12 text-purple-400 tracking-widest">ZONE REACHED: 1</p>
+    <button onclick="startGame()" class="glitch-btn" style="border-color: #f06; color: #f06;">REBOOT [SPACE]</button>
+</div>
+
+<div class="ui-panel">
+    <div class="flex justify-between items-start">
+        <div class="bar-container space-y-2">
+            <div class="text-sm text-cyan-400 tracking-[0.3em] uppercase font-bold" id="zone-ui">ZONE: 1</div>
+            <div class="text-5xl font-black italic neon-text leading-none">SCORE: <span id="score-val">0</span></div>
+            <div class="text-yellow-400 text-sm tracking-widest uppercase font-bold">MULTIPLIER: x<span id="combo-val">1.0</span></div>
+        </div>
+        
+        <div class="bar-container flex flex-col items-end">
+            <div class="flex justify-between w-full mb-1">
+                <span class="text-[10px] text-pink-500 tracking-[0.2em] font-bold">INTEGRITY</span>
+                <span class="text-[10px] text-pink-500 font-bold" id="pulse-text">100%</span>
+            </div>
+            <div class="bar"><div id="pulse-fill" class="bar-fill" style="width: 100%"></div></div>
+            
+            <div class="flex justify-between w-full mt-3 mb-1">
+                <span class="text-[10px] text-cyan-400 tracking-[0.2em] font-bold">THRUST VELOCITY</span>
+                <span class="text-[10px] text-cyan-400 font-bold" id="speed-text">0 MACH</span>
+            </div>
+            <div class="speed-bar"><div id="speed-fill" class="speed-fill" style="width: 0%"></div></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let scene, camera, renderer, composer, clock, playerShip, speedLines, gridHelper;
+    let roadSegments = [], objects = [], scenery = [], engineGlows = [];
+    let speed = 0, score = 0, pulse = 100, isPlaying = false, combo = 1.0, currentZone = 1;
+    let keys = {}, targetX = 0, selectedShipIndex = 0, cameraShake = 0;
+    
+    // Procedural color tracking
+    let globalHue = 0.5; 
+    let baseFogColor, baseHemiLight, baseDirLight;
+    
+    const SHIP_TYPES = [
+        { name: 'Interceptor', class: 'Recon', speedMult: 1.0, accelMult: 1.0, handleMult: 1.0, color: 0x00ffff },
+        { name: 'Titan', class: 'Dread', speedMult: 0.8, accelMult: 0.7, handleMult: 0.6, color: 0xff0066 },
+        { name: 'Speeder', class: 'Dart', speedMult: 1.4, accelMult: 1.5, handleMult: 1.3, color: 0xffff00 },
+        { name: 'Phantom', class: 'Ghost', speedMult: 1.1, accelMult: 1.2, handleMult: 1.5, color: 0xcc00ff, phantom: true },
+        { name: 'Vanguard', class: 'Elite', speedMult: 1.25, accelMult: 1.1, handleMult: 0.9, color: 0x00ff88 }
+    ];
+
+    const SETTINGS = { MAX_SPEED: 2.2, ACCEL: 0.03, FRICTION: 0.015, ROAD_LENGTH: 80, SEGMENT_SIZE: 15, LANE_WIDTH: 12 };
+
+    function initUI() {
+        const container = document.getElementById('ship-container');
+        SHIP_TYPES.forEach((ship, i) => {
+            const hexColor = '#' + ship.color.toString(16).padStart(6, '0');
+            container.innerHTML += `
+                <div onclick="selectShip(${i})" id="ship-${i}" class="ship-card ${i===0?'selected':''} p-4 rounded w-40 text-center">
+                    <div class="text-[9px] mb-1 tracking-widest uppercase font-bold" style="color: ${hexColor}">Class: ${ship.class}</div>
+                    <div class="font-black text-base mb-3 tracking-tighter">${ship.name}</div>
+                    <div class="space-y-1 text-left">
+                        <div class="text-[8px] text-gray-400">SPEED</div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: ${ship.speedMult*60}%; background: ${hexColor}"></div></div>
+                        <div class="text-[8px] text-gray-400">HANDLING</div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: ${ship.handleMult*60}%; background: ${hexColor}"></div></div>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    function init() {
+        initUI();
+        scene = new THREE.Scene();
+        scene.fog = new THREE.FogExp2(0x02010a, 0.012);
+        
+        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 2500);
+        camera.position.set(0, 5, 12);
+
+        renderer = new THREE.WebGLRenderer({ antialias: false, powerPreference: "high-performance" });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); // Optimized for high Hz
+        document.body.appendChild(renderer.domElement);
+
+        // BLOOM POST PROCESSING
+        const renderScene = new THREE.RenderPass(scene, camera);
+        const bloomPass = new THREE.UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.8, 0.5, 0.85);
+        bloomPass.threshold = 0.15;
+        bloomPass.strength = 1.8;
+        
+        composer = new THREE.EffectComposer(renderer);
+        composer.addPass(renderScene);
+        composer.addPass(bloomPass);
+
+        clock = new THREE.Clock();
+
+        baseHemiLight = new THREE.HemisphereLight(0xff00ff, 0x00ffff, 0.8);
+        scene.add(baseHemiLight);
+        
+        baseDirLight = new THREE.DirectionalLight(0xffffff, 0.5);
+        baseDirLight.position.set(0, 100, -100);
+        scene.add(baseDirLight);
+
+        createRetroSun();
+        createSpeedLines();
+        createPlayerShip();
+        
+        // Massive Ground Grid
+        gridHelper = new THREE.GridHelper(400, 40, 0x00ffff, 0x220044);
+        gridHelper.position.y = 0.01;
+        scene.add(gridHelper);
+
+        for(let i=0; i<SETTINGS.ROAD_LENGTH; i++) createRoadSegment(i);
+        createStarfield();
+
+        window.addEventListener('keydown', e => { 
+            keys[e.code] = true; 
+            if(e.code === 'Space' && !isPlaying) startGame();
+        });
+        window.addEventListener('keyup', e => keys[e.code] = false);
+        window.addEventListener('resize', onWindowResize);
+    }
+
+    // [All Geometry/Mesh creation functions remain similar, but heavily stylized]
+    function createSpeedLines() {
+        const lineCount = 150;
+        const geometry = new THREE.BufferGeometry();
+        const positions = new Float32Array(lineCount * 6);
+        for (let i = 0; i < lineCount; i++) {
+            const x = THREE.MathUtils.randFloatSpread(150);
+            const y = THREE.MathUtils.randFloatSpread(80);
+            const z = THREE.MathUtils.randFloatSpread(300);
+            positions[i*6] = x; positions[i*6+1] = y; positions[i*6+2] = z;
+            positions[i*6+3] = x; positions[i*6+4] = y; positions[i*6+5] = z + 30;
+        }
+        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        speedLines = new THREE.LineSegments(geometry, new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0 }));
+        scene.add(speedLines);
+    }
+
+    function createRetroSun() {
+        const sunGeo = new THREE.CircleGeometry(150, 64);
+        const sunMat = new THREE.ShaderMaterial({
+            uniforms: { color1: { value: new THREE.Color(0xff0066) }, color2: { value: new THREE.Color(0xffcc00) }, time: { value: 0 } },
+            vertexShader: `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+            fragmentShader: `varying vec2 vUv; uniform vec3 color1; uniform vec3 color2; uniform float time; void main() { float scroll = mod(vUv.y * 12.0 - time * 1.5, 1.0); float scanline = step(0.15, scroll); vec3 color = mix(color1, color2, vUv.y); gl_FragColor = vec4(color, scanline); }`,
+            transparent: true, side: THREE.DoubleSide
+        });
+        const sun = new THREE.Mesh(sunGeo, sunMat);
+        sun.position.set(0, 50, -1000);
+        sun.userData.shader = sunMat;
+        scene.add(sun);
+    }
+
+    function createStarfield() {
+        const geo = new THREE.BufferGeometry();
+        const pts = [];
+        for(let i=0; i<3000; i++) pts.push(THREE.MathUtils.randFloatSpread(2000), THREE.MathUtils.randFloatSpread(1500) + 500, THREE.MathUtils.randFloatSpread(2000));
+        geo.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+        scene.add(new THREE.Points(geo, new THREE.PointsMaterial({ color: 0xffffff, size: 1.0, transparent: true, opacity: 0.8 })));
+    }
+
+    function createPlayerShip() {
+        if (playerShip) scene.remove(playerShip);
+        engineGlows = [];
+        const group = new THREE.Group();
+        const shipConfig = SHIP_TYPES[selectedShipIndex];
+        const color = shipConfig.color;
+        
+        // Enhanced Ship Models with more geometry
+        const bodyMat = new THREE.MeshStandardMaterial({ color: 0x111111, metalness: 0.8, roughness: 0.2, transparent: !!shipConfig.phantom, opacity: shipConfig.phantom ? 0.4 : 1.0 });
+        const neonMat = new THREE.MeshBasicMaterial({ color: color, transparent: !!shipConfig.phantom, opacity: shipConfig.phantom ? 0.7 : 1.0 });
+
+        // Base sleek hull
+        const hull = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 1.2, 4, 8), bodyMat);
+        hull.rotation.x = Math.PI / 2;
+        group.add(hull);
+
+        // Wings/Accents based on class
+        const wings = new THREE.Mesh(new THREE.BoxGeometry(selectedShipIndex === 1 ? 4 : 5, 0.2, 1.5), bodyMat);
+        wings.position.set(0, -0.2, 0.5);
+        group.add(wings);
+        
+        // Neon trim
+        const trim = new THREE.Mesh(new THREE.BoxGeometry(selectedShipIndex === 1 ? 4.2 : 5.2, 0.25, 0.2), neonMat);
+        trim.position.set(0, -0.2, 1.2);
+        group.add(trim);
+
+        // Cockpit
+        const cock = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.6, 1.5), new THREE.MeshBasicMaterial({ color: 0x000000 }));
+        cock.position.set(0, 0.5, -0.5);
+        group.add(cock);
+
+        // Engines
+        addEngine(group, -0.8, -0.2, 2.2, 1.0, color);
+        addEngine(group, 0.8, -0.2, 2.2, 1.0, color);
+        if(selectedShipIndex === 2 || selectedShipIndex === 4) addEngine(group, 0, 0.2, 2.0, 1.2, color); // Center thrust for speeders
+
+        playerShip = group;
+        playerShip.position.y = 1.5;
+        scene.add(playerShip);
+    }
+
+    function addEngine(parent, x, y, z, size, color) {
+        // Engine casing
+        const casing = new THREE.Mesh(new THREE.CylinderGeometry(size*0.4, size*0.5, 1, 8), new THREE.MeshStandardMaterial({color: 0x222222}));
+        casing.rotation.x = Math.PI/2;
+        casing.position.set(x, y, z - 0.5);
+        parent.add(casing);
+        
+        // Engine fire
+        const glowGeo = new THREE.SphereGeometry(size * 0.4, 16, 16);
+        const glowMat = new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.9 });
+        const glow = new THREE.Mesh(glowGeo, glowMat);
+        glow.position.set(x, y, z);
+        parent.add(glow);
+        engineGlows.push({ mesh: glow, baseSize: size });
+    }
+
+    function spawnNeonTree(z) {
+        const group = new THREE.Group();
+        const isRight = Math.random() > 0.5;
+        const xPos = (isRight ? 1 : -1) * (SETTINGS.LANE_WIDTH * 1.5 + Math.random() * 15);
+        
+        // Synthwave Wireframe Palm Tree
+        const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.6, 15, 6), new THREE.MeshStandardMaterial({color: 0x111111, metalness: 0.9}));
+        trunk.position.y = 7.5;
+        
+        const leaves = new THREE.Mesh(new THREE.ConeGeometry(5, 6, 5, 1, true), new THREE.MeshBasicMaterial({color: 0xff00ff, wireframe: true, transparent: true, opacity: 0.6}));
+        leaves.position.y = 16;
+        leaves.rotation.x = Math.PI;
+        
+        group.add(trunk);
+        group.add(leaves);
+        group.position.set(xPos, 0, z);
+        
+        // Attach dynamic color material to leaves for procedural shifting
+        group.userData = { type: 'scenery', leavesMat: leaves.material };
+        scene.add(group);
+        scenery.push(group);
+    }
+
+    function createRoadSegment(index) {
+        const group = new THREE.Group();
+        // Moving track logic handled by GridHelper now, just add glowing side rails
+        const railMat = new THREE.MeshBasicMaterial({ color: 0x00ffff });
+        const lRail = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.5, SETTINGS.SEGMENT_SIZE), railMat);
+        lRail.position.set(-SETTINGS.LANE_WIDTH, 0.25, 0);
+        
+        const rRail = lRail.clone();
+        rRail.position.x = SETTINGS.LANE_WIDTH;
+        
+        group.add(lRail); group.add(rRail);
+        group.position.z = -index * SETTINGS.SEGMENT_SIZE;
+        group.userData = { lRailMat: railMat, rRailMat: rRail.material }; // Track for color shift
+        scene.add(group);
+        roadSegments.push(group);
+    }
+
+    function spawnObject(z) {
+        const rand = Math.random();
+        let type = rand > 0.5 ? 'barrier' : (rand > 0.25 ? 'shard' : 'nitro');
+        let mesh;
+        
+        if (type === 'barrier') {
+            mesh = new THREE.Group();
+            const pillarL = new THREE.Mesh(new THREE.CylinderGeometry(0.5, 0.5, 4), new THREE.MeshStandardMaterial({color: 0x333333}));
+            pillarL.position.set(-2, 2, 0);
+            const pillarR = pillarL.clone(); pillarR.position.set(2, 2, 0);
+            const energyGate = new THREE.Mesh(new THREE.PlaneGeometry(4, 4), new THREE.MeshBasicMaterial({color: 0xff0066, transparent: true, opacity: 0.6, side: THREE.DoubleSide}));
+            energyGate.position.y = 2;
+            mesh.add(pillarL); mesh.add(pillarR); mesh.add(energyGate);
+        } else if (type === 'shard') {
+            mesh = new THREE.Mesh(new THREE.OctahedronGeometry(1.5), new THREE.MeshBasicMaterial({ color: 0xffff00, wireframe: true }));
+            const core = new THREE.Mesh(new THREE.OctahedronGeometry(0.8), new THREE.MeshBasicMaterial({ color: 0xffffff }));
+            mesh.add(core);
+        } else {
+            mesh = new THREE.Mesh(new THREE.TorusGeometry(1.5, 0.3, 8, 16), new THREE.MeshBasicMaterial({ color: 0x00ff88 }));
+        }
+        
+        mesh.userData = { type, active: true };
+        mesh.position.set((Math.random() - 0.5) * SETTINGS.LANE_WIDTH * 1.5, 0, z);
+        scene.add(mesh);
+        objects.push(mesh);
+        
+        if(Math.random() < 0.6) spawnNeonTree(z); // Spawn scenery alongside objects
+    }
+
+    function selectShip(index) {
+        selectedShipIndex = index;
+        document.querySelectorAll('.ship-card').forEach((card, i) => card.classList.toggle('selected', i === index));
+        createPlayerShip();
+    }
+
+    function triggerAlert(msg, color, comboBonus) {
+        if(comboBonus) combo = Math.min(combo + 0.2, 8.0);
+        const el = document.getElementById('alert-ui');
+        el.innerText = msg + (comboBonus ? ` x${combo.toFixed(1)}` : '');
+        el.style.color = color;
+        el.style.textShadow = `0 0 20px ${color}`;
+        el.style.opacity = '1';
+        el.style.transform = 'translate(-50%, -50%) scale(1.2)';
+        setTimeout(() => {
+            el.style.opacity = '0';
+            el.style.transform = 'translate(-50%, -50%) scale(1.0)';
+        }, 600);
+    }
+
+    function startGame() {
+        speed = 0; score = 0; pulse = 100; combo = 1.0; currentZone = 1; globalHue = 0.5;
+        isPlaying = true;
+        document.getElementById('start-menu').classList.add('hidden');
+        document.getElementById('death-menu').classList.add('hidden');
+        
+        [...objects, ...scenery].forEach(o => scene.remove(o));
+        objects = []; scenery = [];
+        
+        playerShip.position.set(0, 1.5, 0);
+        targetX = 0;
+        camera.position.set(0, 5, 12);
+        camera.fov = 75;
+        
+        roadSegments.forEach((seg, i) => seg.position.z = -i * SETTINGS.SEGMENT_SIZE);
+        gridHelper.position.z = 0;
+    }
+
+    function updateColors() {
+        // Procedural color shifting based on score
+        globalHue = (0.5 + (score * 0.000005)) % 1.0;
+        
+        const mainColor = new THREE.Color().setHSL(globalHue, 1.0, 0.5);
+        const secColor = new THREE.Color().setHSL((globalHue + 0.5) % 1.0, 1.0, 0.5);
+        
+        scene.fog.color.setHSL(globalHue, 0.8, 0.04);
+        baseHemiLight.color.copy(mainColor);
+        baseHemiLight.groundColor.copy(secColor);
+        
+        gridHelper.material.color.copy(mainColor);
+        
+        roadSegments.forEach(seg => {
+            seg.userData.lRailMat.color.copy(mainColor);
+            seg.userData.rRailMat.color.copy(mainColor);
+        });
+        
+        scenery.forEach(tree => {
+            if(tree.userData.leavesMat) tree.userData.leavesMat.color.copy(secColor);
+        });
+    }
+
+    function update() {
+        const delta = clock.getDelta();
+        const time = clock.getElapsedTime();
+
+        scene.children.forEach(c => { if(c.userData.shader) c.userData.shader.uniforms.time.value = time; });
+
+        if (!isPlaying) {
+            if(playerShip) {
+                playerShip.position.y = 1.5 + Math.sin(time * 2) * 0.3;
+                playerShip.rotation.z = Math.sin(time) * 0.1;
+            }
+            composer.render();
+            return;
+        }
+
+        const ship = SHIP_TYPES[selectedShipIndex];
+
+        // Acceleration Math
+        if (keys['ArrowUp'] || keys['KeyW']) speed += SETTINGS.ACCEL * ship.accelMult;
+        else if (keys['ArrowDown'] || keys['KeyS']) speed -= SETTINGS.ACCEL * 4;
+        else speed -= SETTINGS.FRICTION;
+        
+        speed = Math.max(0, Math.min(speed, SETTINGS.MAX_SPEED * ship.speedMult));
+
+        // FRAME-RATE INDEPENDENT LERP for 80Hz Monitors
+        const turnSpeed = 1.2 * ship.handleMult;
+        if (keys['ArrowLeft'] || keys['KeyA']) targetX -= turnSpeed;
+        if (keys['ArrowRight'] || keys['KeyD']) targetX += turnSpeed;
+        
+        // Hard clamp to prevent driving off into the void
+        targetX = Math.max(-SETTINGS.LANE_WIDTH*1.2, Math.min(SETTINGS.LANE_WIDTH*1.2, targetX));
+
+        // Use exponential decay for perfectly smooth interpolation regardless of FPS
+        const lerpFactor = 1 - Math.pow(0.0001, delta);
+        playerShip.position.x += (targetX - playerShip.position.x) * lerpFactor;
+        
+        playerShip.position.z -= speed * 150 * delta;
+        playerShip.rotation.z = (playerShip.position.x - targetX) * 0.15;
+        playerShip.rotation.y = (targetX - playerShip.position.x) * 0.08;
+
+        // Visual FX updates
+        speedLines.position.z = playerShip.position.z;
+        speedLines.material.opacity = (speed / SETTINGS.MAX_SPEED) * 0.6;
+        gridHelper.position.z = playerShip.position.z; // Move grid with player for infinite illusion
+
+        engineGlows.forEach(g => {
+            const flicker = 0.7 + Math.random() * 0.6;
+            const boost = 1.0 + (speed / SETTINGS.MAX_SPEED);
+            g.mesh.scale.setScalar(g.baseSize * flicker * boost);
+            g.mesh.material.opacity = 0.6 + Math.random() * 0.4;
+        });
+
+        // Dynamic FOV Warp
+        const targetFov = 75 + (speed / SETTINGS.MAX_SPEED) * 25;
+        camera.fov += (targetFov - camera.fov) * lerpFactor;
+        camera.updateProjectionMatrix();
+
+        // Camera follow
+        if (cameraShake > 0) {
+            camera.position.x += (Math.random() - 0.5) * cameraShake;
+            camera.position.y += (Math.random() - 0.5) * cameraShake;
+            cameraShake *= 0.85;
+        }
+        camera.position.x += (playerShip.position.x * 0.6 - camera.position.x) * lerpFactor;
+        camera.position.z = playerShip.position.z + 12 + (speed * 8);
+        camera.position.y = 5 + (speed * 1.5);
+        camera.lookAt(playerShip.position.x * 0.5, 2, playerShip.position.z - 50);
+
+        // Procedural Generation & Cleanup
+        roadSegments.forEach(seg => {
+            if (seg.position.z > camera.position.z + 20) {
+                seg.position.z -= SETTINGS.ROAD_LENGTH * SETTINGS.SEGMENT_SIZE;
+                if (Math.random() < 0.35) spawnObject(seg.position.z);
+            }
+        });
+
+        // Zone Progression & Color Shift
+        const newZone = Math.floor(score / 25000) + 1;
+        if(newZone > currentZone) {
+            currentZone = newZone;
+            triggerAlert(`ZONE ${currentZone} REACHED`, '#0ff', false);
+            document.getElementById('zone-ui').innerText = `ZONE: ${currentZone}`;
+        }
+        updateColors();
+
+        // Object Collision & Near Miss
+        for(let i = objects.length - 1; i >= 0; i--) {
+            const obj = objects[i];
+            obj.rotation.y += 2 * delta;
+            
+            if(obj.userData.type === 'shard') obj.position.y = 1.5 + Math.sin(time*5)*0.5;
+
+            const dist = obj.position.distanceTo(playerShip.position);
+            
+            // Near Miss check
+            if (obj.userData.type === 'barrier' && obj.userData.active && dist < 5.0 && dist > 3.0) {
+                obj.userData.active = false;
+                triggerAlert('NEAR MISS!', '#ffcc00', true);
+            }
+
+            // Hit check
+            if (dist < 3.0 && obj.userData.active) {
+                obj.userData.active = false;
+                scene.remove(obj);
+                
+                if (obj.userData.type === 'barrier') {
+                    pulse -= ship.phantom ? 15 : 35;
+                    speed *= 0.3;
+                    cameraShake = 2.0;
+                    combo = 1.0;
+                    triggerAlert('HULL DAMAGE', '#ff0066', false);
+                } else if (obj.userData.type === 'shard') {
+                    score += 5000 * combo;
+                    pulse = Math.min(100, pulse + 15);
+                } else if (obj.userData.type === 'nitro') {
+                    speed = SETTINGS.MAX_SPEED * ship.speedMult * 1.5; // Overdrive burst
+                    score += 1500 * combo;
+                    cameraShake = 0.5;
+                    triggerAlert('OVERDRIVE', '#00ff88', false);
+                }
+                objects.splice(i, 1);
+            } else if (obj.position.z > camera.position.z + 10) {
+                scene.remove(obj);
+                objects.splice(i, 1);
+            }
+        }
+        
+        // Cleanup Scenery
+        for(let i = scenery.length - 1; i >= 0; i--) {
+            if (scenery[i].position.z > camera.position.z + 10) {
+                scene.remove(scenery[i]);
+                scenery.splice(i, 1);
+            }
+        }
+
+        // Scoring & HUD
+        score += Math.floor(speed * 2500 * delta * combo);
+        pulse -= 1.2 * delta;
+        
+        document.getElementById('score-val').innerText = Math.floor(score).toLocaleString();
+        document.getElementById('combo-val').innerText = combo.toFixed(1);
+        document.getElementById('pulse-fill').style.width = Math.max(0, pulse) + '%';
+        document.getElementById('pulse-text').innerText = Math.max(0, Math.floor(pulse)) + '%';
+        
+        const speedPercent = (speed / (SETTINGS.MAX_SPEED * ship.speedMult)) * 100;
+        document.getElementById('speed-fill').style.width = Math.min(100, speedPercent) + '%';
+        document.getElementById('speed-text').innerText = (speed * 10).toFixed(1) + ' MACH';
+
+        if (pulse <= 0) {
+            isPlaying = false;
+            document.getElementById('death-menu').classList.remove('hidden');
+            document.getElementById('final-score').innerText = "SCORE: " + Math.floor(score).toLocaleString();
+            document.getElementById('final-zone').innerText = "ZONE REACHED: " + currentZone;
+        }
+
+        composer.render();
+    }
+
+    function animate() { requestAnimationFrame(animate); update(); }
+    function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        composer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    window.onload = () => { init(); animate(); };
+</script>
+</body>
+</html>

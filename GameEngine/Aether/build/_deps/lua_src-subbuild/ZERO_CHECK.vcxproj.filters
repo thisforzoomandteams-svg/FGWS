@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\GameEngine\Aether\build\_deps\lua_src-subbuild\CMakeFiles\2d69111f0bff491fabc37615cbcad7a6\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A6622F65-D67C-3DE4-BC32-57EFA77F9726}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

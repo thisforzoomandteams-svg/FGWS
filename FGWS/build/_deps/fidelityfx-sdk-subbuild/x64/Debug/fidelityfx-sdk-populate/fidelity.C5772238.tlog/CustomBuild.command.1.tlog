@@ -1,0 +1,150 @@
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\96317D8CA121D88D637027914D50D2AB\FIDELITYFX-SDK-POPULATE-MKDIR.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcfgdir=/Debug -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/tmp/fidelityfx-sdk-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/src/fidelityfx-sdk-populate-stamp/Debug/fidelityfx-sdk-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\96317D8CA121D88D637027914D50D2AB\FIDELITYFX-SDK-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/tmp/fidelityfx-sdk-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/src/fidelityfx-sdk-populate-stamp/Debug/fidelityfx-sdk-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\96317D8CA121D88D637027914D50D2AB\FIDELITYFX-SDK-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/tmp/fidelityfx-sdk-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\96317D8CA121D88D637027914D50D2AB\FIDELITYFX-SDK-POPULATE-PATCH.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/src/fidelityfx-sdk-populate-stamp/Debug/fidelityfx-sdk-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\96317D8CA121D88D637027914D50D2AB\FIDELITYFX-SDK-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/src/fidelityfx-sdk-populate-stamp/Debug/fidelityfx-sdk-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\96317D8CA121D88D637027914D50D2AB\FIDELITYFX-SDK-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/src/fidelityfx-sdk-populate-stamp/Debug/fidelityfx-sdk-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\96317D8CA121D88D637027914D50D2AB\FIDELITYFX-SDK-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/src/fidelityfx-sdk-populate-stamp/Debug/fidelityfx-sdk-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\96317D8CA121D88D637027914D50D2AB\FIDELITYFX-SDK-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\fidelityfx-sdk-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/src/fidelityfx-sdk-populate-stamp/Debug/fidelityfx-sdk-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\314CDD76D93FAF58DFDDE51618ADC805\FIDELITYFX-SDK-POPULATE-COMPLETE.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E make_directory C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/Debug/fidelityfx-sdk-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/fidelityfx-sdk-populate-prefix/src/fidelityfx-sdk-populate-stamp/Debug/fidelityfx-sdk-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKEFILES\F903A88B6ED20DB364B69FF6F8C52CE4\FIDELITYFX-SDK-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\FIDELITYFX-SDK-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -SC:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild -BC:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild --check-stamp-file C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

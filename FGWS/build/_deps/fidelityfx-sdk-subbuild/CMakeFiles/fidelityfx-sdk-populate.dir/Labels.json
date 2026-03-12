@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/fidelityfx-sdk-populate"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/f903a88b6ed20db364b69ff6f8c52ce4/fidelityfx-sdk-populate.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/314cdd76d93faf58dfdde51618adc805/fidelityfx-sdk-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/96317d8ca121d88d637027914d50d2ab/fidelityfx-sdk-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/96317d8ca121d88d637027914d50d2ab/fidelityfx-sdk-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/96317d8ca121d88d637027914d50d2ab/fidelityfx-sdk-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/96317d8ca121d88d637027914d50d2ab/fidelityfx-sdk-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/96317d8ca121d88d637027914d50d2ab/fidelityfx-sdk-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/96317d8ca121d88d637027914d50d2ab/fidelityfx-sdk-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/96317d8ca121d88d637027914d50d2ab/fidelityfx-sdk-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/fidelityfx-sdk-subbuild/CMakeFiles/96317d8ca121d88d637027914d50d2ab/fidelityfx-sdk-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fidelityfx-sdk-populate"
+		],
+		"name" : "fidelityfx-sdk-populate"
+	}
+}

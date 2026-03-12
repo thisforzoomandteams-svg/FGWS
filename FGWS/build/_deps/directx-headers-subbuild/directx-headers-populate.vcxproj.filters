@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\8e11a201e1ef30fa92cdfbed9e3a3d5a\directx-headers-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\f72eaa7cd997aae7726bc1ab884032e7\directx-headers-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\7c689ea16cd0c6b395b9ce4193c03839\directx-headers-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-subbuild\CMakeFiles\directx-headers-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C231C417-9264-3F31-809F-DB0D34E2EE40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-build/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/glm-build/glm/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-build/cmake_install.cmake",
+		"C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/Imported/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

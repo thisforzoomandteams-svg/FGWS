@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/imgui_src-populate"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/a1c2d080e63f67a78a9889fd2eb7a22f/imgui_src-populate.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/20c3ed5a612e36c2a29f0ed4f9372db4/imgui_src-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/2ba3c0c39bd2fb02f1979740c4e9ce05/imgui_src-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/2ba3c0c39bd2fb02f1979740c4e9ce05/imgui_src-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/2ba3c0c39bd2fb02f1979740c4e9ce05/imgui_src-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/2ba3c0c39bd2fb02f1979740c4e9ce05/imgui_src-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/2ba3c0c39bd2fb02f1979740c4e9ce05/imgui_src-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/2ba3c0c39bd2fb02f1979740c4e9ce05/imgui_src-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/2ba3c0c39bd2fb02f1979740c4e9ce05/imgui_src-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/yomna/OneDrive/Desktop/Projects/GameEngine/Aether/build/_deps/imgui_src-subbuild/CMakeFiles/2ba3c0c39bd2fb02f1979740c4e9ce05/imgui_src-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui_src-populate"
+		],
+		"name" : "imgui_src-populate"
+	}
+}

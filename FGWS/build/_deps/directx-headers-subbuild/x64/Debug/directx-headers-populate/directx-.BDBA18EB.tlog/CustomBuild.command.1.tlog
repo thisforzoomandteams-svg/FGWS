@@ -1,0 +1,150 @@
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\8E11A201E1EF30FA92CDFBED9E3A3D5A\DIRECTX-HEADERS-POPULATE-MKDIR.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcfgdir=/Debug -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/tmp/directx-headers-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\8E11A201E1EF30FA92CDFBED9E3A3D5A\DIRECTX-HEADERS-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/tmp/directx-headers-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\8E11A201E1EF30FA92CDFBED9E3A3D5A\DIRECTX-HEADERS-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/tmp/directx-headers-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\8E11A201E1EF30FA92CDFBED9E3A3D5A\DIRECTX-HEADERS-POPULATE-PATCH.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\8E11A201E1EF30FA92CDFBED9E3A3D5A\DIRECTX-HEADERS-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\8E11A201E1EF30FA92CDFBED9E3A3D5A\DIRECTX-HEADERS-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\8E11A201E1EF30FA92CDFBED9E3A3D5A\DIRECTX-HEADERS-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\8E11A201E1EF30FA92CDFBED9E3A3D5A\DIRECTX-HEADERS-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\build\_deps\directx-headers-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\F72EAA7CD997AAE7726BC1AB884032E7\DIRECTX-HEADERS-POPULATE-COMPLETE.RULE
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E make_directory C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/Debug/directx-headers-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -E touch C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/directx-headers-populate-prefix/src/directx-headers-populate-stamp/Debug/directx-headers-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKEFILES\7C689EA16CD0C6B395B9CE4193C03839\DIRECTX-HEADERS-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\YOMNA\ONEDRIVE\DESKTOP\PROJECTS\FGWS\BUILD\_DEPS\DIRECTX-HEADERS-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\Users\yomna\AppData\Roaming\Python\Python314\site-packages\cmake\data\bin\cmake.exe -SC:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild -BC:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild --check-stamp-file C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
