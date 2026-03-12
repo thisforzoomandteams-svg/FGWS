@@ -7,31 +7,16 @@
     <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\DeviceCaps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\PresentationQueue.cpp">
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\Backends\Software_FrameGen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\MotionVectorPass.cpp">
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\Backends\FSR3_FrameGen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\OcclusionMaskPass.cpp">
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\Backends\DLSS_FrameGen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\InterpolationPass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\SoftwareInterpolationPipeline.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\Backends\Software_FrameGen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\Backends\FSR3_FrameGen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\Backends\DLSS_FrameGen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\Backends\XeSS_FrameGen.cpp">
+    <ClCompile Include="C:\Users\yomna\OneDrive\Desktop\Projects\FGWS\src\Backends\XeSS_FrameGen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

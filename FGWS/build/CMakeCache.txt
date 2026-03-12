@@ -98,7 +98,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/FrameGenEngine
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files/FrameGenEngine
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -249,9 +249,6 @@ CTEST_SUBMIT_RETRY_COUNT:STRING=3
 //How long to wait between timed-out CTest submissions.
 CTEST_SUBMIT_RETRY_DELAY:STRING=5
 
-//The directory containing a CMake configuration file for Catch2.
-Catch2_DIR:PATH=Catch2_DIR-NOTFOUND
-
 //Path to a file.
 D3DX12_INCLUDE_DIR:PATH=D3DX12_INCLUDE_DIR-NOTFOUND
 
@@ -290,10 +287,6 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 FETCHCONTENT_QUIET:BOOL=ON
 
 //When not empty, overrides where to find pre-populated content
-// for Catch2
-FETCHCONTENT_SOURCE_DIR_CATCH2:PATH=
-
-//When not empty, overrides where to find pre-populated content
 // for DirectX-Headers
 FETCHCONTENT_SOURCE_DIR_DIRECTX-HEADERS:PATH=
 
@@ -307,9 +300,6 @@ FETCHCONTENT_SOURCE_DIR_GLM:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of Catch2
-FETCHCONTENT_UPDATES_DISCONNECTED_CATCH2:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of DirectX-Headers
 FETCHCONTENT_UPDATES_DISCONNECTED_DIRECTX-HEADERS:BOOL=OFF
@@ -497,7 +487,7 @@ CMAKE_GENERATOR:INTERNAL=Visual Studio 17 2022
 //Generator instance identifier.
 CMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools
 //Name of generator platform.
-CMAKE_GENERATOR_PLATFORM:INTERNAL=
+CMAKE_GENERATOR_PLATFORM:INTERNAL=x64
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
@@ -629,5 +619,5 @@ Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_LIBRARY
 Vulkan_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/FrameGenEngine
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files/FrameGenEngine
 
