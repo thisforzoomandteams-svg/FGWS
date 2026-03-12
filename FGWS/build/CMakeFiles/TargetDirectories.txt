@@ -15,6 +15,3 @@ C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-build/
 C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-build/CMakeFiles/DirectX-Guids.dir
 C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-build/CMakeFiles/RUN_TESTS.dir
 C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/_deps/directx-headers-build/CMakeFiles/ALL_BUILD.dir
-C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/Imported/CMakeFiles/framegen_imports.dir
-C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/Imported/CMakeFiles/RUN_TESTS.dir
-C:/Users/yomna/OneDrive/Desktop/Projects/FGWS/build/Imported/CMakeFiles/ALL_BUILD.dir
